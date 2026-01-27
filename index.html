@@ -3,18 +3,45 @@
         <title>HypeBolt</title>
         <link rel="icon" href="/img/hex_base.ico">
 
-        <script>
-            setTimeout(
-                function() {
-                    location.href = '/sparks'
-                }, 500
-            );
-        </script>
         <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
             body {
                 background-color: #060018;
             }
+
+            main {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .logo {
+                width: 60vw;
+            }
+
+            .logo img {
+                width: 100%;
+            }
         </style>
+        <script>
+            setTimeout(
+                function() {
+                    location.reload()
+                }, 5000
+            );
+        </script>
     </head>
-    <body></body>
+    <body>
+        <main>
+            <div class="logo">
+                <img src="/img/HypeBolt_Logo_Banner_v5.png" alt="HypeBolt logo banner.">
+            </div>
+        </main>
+    </body>
 </html>
